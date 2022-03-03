@@ -1,8 +1,8 @@
 package day14.StackAndQueue;
 
+
 public class Stack {
 	MyNode head;
-
 
 	/*
 	 * 1. created addNode Method to add elements
@@ -12,7 +12,7 @@ public class Stack {
 		 * Created node Object of MyNode class
 		 */
 		MyNode node = new MyNode(data);
-		
+
 		/*
 		 * If Stack is empty, head will point to the node
 		 */
@@ -38,5 +38,28 @@ public class Stack {
 			temp = temp.next;
 		}
 		System.out.println("");
+	}
+
+	/*
+	 * Created Method Peak it will returns the value of what is on the top of the
+	 * stack
+	 */
+	public void peak() {
+		MyNode peakValue = head;
+		System.out.println("Top element is :");
+		System.out.println(head.data);
+	}
+
+	/*
+	 * pop: Created Method deleteHead will remove the value of the stack and then
+	 * return it
+	 */
+	public void deleteHead() {
+		System.out.println("deleting top node");
+		MyNode temp = head;
+		if (temp != null) {
+			head = temp.next;
+		}
+
 	}
 }

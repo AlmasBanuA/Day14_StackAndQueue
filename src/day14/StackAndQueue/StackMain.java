@@ -13,21 +13,38 @@ public class StackMain {
 		 */
 
 		/*
-		 * 1.creating Object an Oject
+		 * deleting stack head element
 		 */
-		System.out.println("inserting element into stack ::");
-		Stack stack = new Stack();
-		
-		 /*
-		 * 2.Calling addnode method to push value to stack
-		 */
-		
+		System.out.println("deleting element ::");
 		/*
-		 * UC1:Ability to create a Stack of 56->30->70
+		 * 1.creating an Oject of class Stack
 		 */
-			stack.addNode(70);
-			stack.addNode(30);
-			stack.addNode(56);
+		Stack stack = new Stack();
+
+		/*
+		 * Calling mathod addNode to add elements
+		 */
+		stack.addNode(70);
+		stack.addNode(30);
+		stack.addNode(56);
+
+		/*
+		 * Calling Method Peak it will returns the value of what is on the top of the
+		 * stack
+		 */
+		stack.peak();
+
+		/*
+		 * pop: Created Method deleteHead will remove the value of the stack and then
+		 * return it
+		 */
+		stack.deleteHead();
+		stack.printList();
+		stack.peak();
+		stack.deleteHead();
+		stack.printList();
+		stack.peak();
+		stack.deleteHead();
 
 	}
 }

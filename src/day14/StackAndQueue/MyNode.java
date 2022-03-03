@@ -1,6 +1,7 @@
 package day14.StackAndQueue;
 
 public class MyNode {
+
 	/*
 	 * created MyNode Class
 	 */
